@@ -1,2 +1,2 @@
 # FTC-6625
-Code for the 6625 FTC Robot 2018
+FTC 2018 6625 Java script code with one-stick drive control. Will update frequently. 
