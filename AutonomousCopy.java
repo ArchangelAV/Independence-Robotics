@@ -8,7 +8,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 @Disabled
 @Autonomous(name = "Autonomous Copy", group = "AutonomousCopy")
-public class Autonomous Copy extends LinearOpMode
+public class AutonomousCopy extends LinearOpMode
 {
 // To use remove @Disabled from line 9 // 
     private DcMotor motor1;
