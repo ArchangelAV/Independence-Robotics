@@ -13,13 +13,7 @@ import com.qualcomm.robotcore.util.Range;
 @Disabled
 @TeleOp(name = "Driver ControlCopy", group = "Driver ControlCopy")
 public class DCCopy extends LinearOpMode {
-/**This is a copy of the Driver Control OP mode on the phone
-If you need to make edits please remove the @Disabled line from this code and make
-any edits you may need. If you need a new copy of this OP mode Text me at
-(319)-327-0338 and leave your email. I will sent you a new copy of this OP mode.
-If you have any quesitons ask Matthew or Caleb.
-Good luck at the competition, I will see you all after Thanksgiving Break.
--Connor **/ 
+// To use remove @Disabled from line 13 // 
     private ElapsedTime runtime = new ElapsedTime();
     private DcMotor motor1;
     private DcMotor motor2;
