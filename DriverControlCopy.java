@@ -12,7 +12,7 @@ import com.qualcomm.robotcore.util.Range;
 
 @Disabled
 @TeleOp(name = "Driver ControlCopy", group = "Driver ControlCopy")
-public class DCCopy extends LinearOpMode {
+public class DriverControlCopy extends LinearOpMode {
 // To use remove @Disabled from line 13 // 
     private ElapsedTime runtime = new ElapsedTime();
     private DcMotor motor1;
