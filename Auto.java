@@ -5,11 +5,11 @@ import java.util.Set;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
-
-@Autonomous(name = "Autonomous", group = "Autonomous")
-public class Auto extends LinearOpMode
+@Disabled
+@Autonomous(name = "Autonomous 6625", group = "Autonomous 6625")
+public class Auto 6625 extends LinearOpMode
 {
-
+// To use remove @Disabled from line 8 // 
     private DcMotor motor1;
     private DcMotor motor2;
     private DcMotor motor3;
