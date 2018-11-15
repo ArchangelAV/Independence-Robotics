@@ -6,14 +6,15 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 @Disabled
-@Autonomous(name = "Autonomous 6625", group = "Autonomous 6625")
+@Autonomous(name = "Autonomous", group = "Autonomous")
 public class Auto extends LinearOpMode
 {
-// To use remove @Disabled from line 8 // 
+/** AUtonomous code for 6625 robot, to use remove @Disabled from line 8. **/
     private DcMotor motor1;
     private DcMotor motor2;
     private DcMotor motor3;
     private DcMotor motor4;
+    private Servo   servo1;
 
 
     @Override
@@ -23,6 +24,7 @@ public class Auto extends LinearOpMode
         motor2 = hardwareMap.dcMotor.get("motor2");
         motor3 = hardwareMap.dcMotor.get("motor3");
         motor4 = hardwareMap.dcMotor.get("motor4");
+        servo1 = hardwareMap.servo.get("servo1");
         motor1.setDirection(DcMotorSimple.Direction.REVERSE);
         while (opModeIsActive());
 
