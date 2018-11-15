@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 @Disabled
 @Autonomous(name = "Autonomous 6625", group = "Autonomous 6625")
-public class Autonomous extends LinearOpMode
+public class Auto extends LinearOpMode
 {
 // To use remove @Disabled from line 8 // 
     private DcMotor motor1;
