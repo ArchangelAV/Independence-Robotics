@@ -10,13 +10,7 @@ import com.qualcomm.robotcore.hardware.DcMotorSimple;
 @Autonomous(name = "AutonomousCopy", group = "AutonomousCopy")
 public class AutoCopy extends LinearOpMode
 {
-/**This is a copy of the Autonomous OP mode on the phone
-If you need to make edits please remove the @Disabled line from this code and make
-any edits you may need. If you need a new copy of this OP mode Text me at
-(319)-327-0338 and leave your email. I will sent you a new copy of this OP mode 
-Good luck at the competition
--Connor **/ 
-
+// To use remove @Disabled from line 9 // 
     private DcMotor motor1;
     private DcMotor motor2;
     private DcMotor motor3;
