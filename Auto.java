@@ -33,7 +33,7 @@ Also may need to change OP Mode name to avoid any conflicts with the code on the
         telemetry.addData("M2 Power", motor2.getPower());
         telemetry.addData("M3 Power", motor3.getPower());
         telemetry.addData("M4 Power", motor4.getPower());
-        // Motor power updates on driver station phone
+        // Motor power displayed on driver station phone
         telemetry.update();
         waitForStart();
         StartTime = getRuntime();
@@ -42,6 +42,5 @@ Also may need to change OP Mode name to avoid any conflicts with the code on the
         while (!(isStopRequested() || getRuntime() - StartTime > 1)) {
 
 
-
-            // Drive motors off
+            
         } } }
