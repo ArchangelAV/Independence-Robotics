@@ -9,7 +9,8 @@ import com.qualcomm.robotcore.hardware.DcMotorSimple;
 @Autonomous(name = "Autonomous", group = "Autonomous")
 public class Auto extends LinearOpMode
 {
-/** Autonomous code for 6625 robot, to use remove @Disabled from line 8. **/
+/** Autonomous code for 6625 robot, to use remove @Disabled from line 8.
+Also may need to change OP Mode name to avoid any conflicts with the code on the phone**/
     private DcMotor motor1;
     private DcMotor motor2;
     private DcMotor motor3;
