@@ -12,7 +12,8 @@ import com.qualcomm.robotcore.util.Range;
 @Disabled
 @TeleOp(name = "Driver Control", group = "Driver Control")
 public class DC extends LinearOpMode {
-/** Driver control code for 6625 robot, to use remove @Disabled from line 12 **/
+/** Driver control code for 6625 robot, to use remove @Disabled from line 12.
+Also may need to change the OP Mode name to avoid any conflicts with the code on the phone**/
     
     private ElapsedTime runtime = new ElapsedTime();
     private DcMotor motor1;
@@ -30,6 +31,7 @@ public class DC extends LinearOpMode {
         motor1  = hardwareMap.get(DcMotor.class, "motor1");
         motor2 = hardwareMap.get(DcMotor.class, "motor2");
         motor3 = hardwareMap.get(DcMotor.class, "motor3");
+        motor4 = hardwareMap.get(DcMOtor.class, "motor4");
         servo1 = hardwareMap.get(Servo.class, "servo1");
 
         motor1.setDirection(DcMotor.Direction.REVERSE);
