@@ -10,9 +10,10 @@ import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.Range;
 
 @Disabled
-@TeleOp(name = "Driver Control 6625", group = "Driver Control 6625")
-public class DriverControl extends LinearOpMode {
-// To Use remove @Disabled from line 12 // 
+@TeleOp(name = "Driver Control", group = "Driver Control")
+public class DC extends LinearOpMode {
+/** Driver control code for 6625 robot, to use remove @Disabled from line 12 **/
+    
     private ElapsedTime runtime = new ElapsedTime();
     private DcMotor motor1;
     private DcMotor motor2;
