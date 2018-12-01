@@ -68,7 +68,7 @@ public class DriverControlledjava extends LinearOpMode {
       }
 
       telemetry.addData("Servos", "drop (%.2f), arm(%.2f)", dropPos, armPos);
-      telemetry.addData("Motors", "left (%.2f), right (%.2f), lift (%.2f)", leftPower, rightPower, liftPower);
+      telemetry.addData("Motors", "left (%.2f), right (%.2f), lift (%.2f), arm (%.2f)", leftPower, rightPower, liftPower, armPower);
       telemetry.update();
     }
   }
