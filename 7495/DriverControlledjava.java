@@ -45,13 +45,17 @@ public class DriverControlledjava extends LinearOpMode {
       if (gamepad1.b) {
         drop.setPosition(0);
       }
-      // Put loop blocks here.
+      // Rack Pinion
       lift_motor.setPower(gamepad1.right_stick_y);
+      //Forward
       left_motor.setPower(-gamepad1.left_stick_y);
       right_motor.setPower(-gamepad1.left_stick_y);
+      //turning
       left_motor.setPower(-gamepad1.left_stick_x);
       right_motor.setPower(gamepad1.left_stick_x);
+      //arm
       arm_motor.setPower(gamepad2.left_stick_y);
+      //telemetry
       telemetry.addData("Servo Pos", drop.getPosition());
       telemetry.addData("Left Pow", right_motor.getPower());
       telemetry.addData("Right Pow", left_motor.getPower());
