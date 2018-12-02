@@ -40,8 +40,8 @@ public class DriverControlledjava extends LinearOpMode {
       }
       if (gamepad1.a) {
         drop.setPosition(1);
-      else (gamepad1.b) 
-        drop.setPosition(0);
+      		else (gamepad1.b) 
+       		drop.setPosition(0);
       }
       // Put loop blocks here.
       lift_motor.setPower(gamepad1.right_stick_y);
