@@ -1,6 +1,7 @@
 package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.util.Range;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.Servo;
@@ -32,6 +33,23 @@ public class DriverControlledjava extends LinearOpMode {
     // Put run blocks here.
     while (opModeIsActive()) {
       {
+            double leftPower;
+            double rightPower;
+            double liftPower;
+            double armPower;
+            double drive = -gamepad1.left_stick_x;
+            double turn = gamepad1.left_stick_y;
+            double lift = -gamepad1.right_stick_y;
+            double armlift= gamepad2.left_stick_y;
+            leftPower = Range.clip(drive - turn, -.5, .5);
+            rightPower = Range.clip(drive + turn, -0.5, 0.5);
+            liftPower = Range.clip(lift, -1.0, 1.0);
+            armPower = Range.clip(armlift, -0.7, 0.7);
+            left_motor.setPower(leftPower);
+            right_motor.setPower(rightPower);
+            lift_motor.setPower(liftPower);
+            arm_motor.setPower(armPower);
+            
         drop.scaleRange(0, 1);
         arm_servo.scaleRange(0, 1);
         if (gamepad2.y) {
@@ -44,16 +62,11 @@ public class DriverControlledjava extends LinearOpMode {
          else if (gamepad1.b) {
           drop.setPosition(0);
         }
-        // Put loop blocks here.
-        lift_motor.setPower(gamepad1.right_stick_y);
-        left_motor.setPower(-gamepad1.left_stick_y);
-        right_motor.setPower(-gamepad1.left_stick_y);
-        left_motor.setPower(-gamepad1.left_stick_x);
-        right_motor.setPower(gamepad1.left_stick_x);
-        arm_motor.setPower(gamepad2.left_stick_y);
+      
         telemetry.addData("Servo Pos", drop.getPosition());
         telemetry.addData("Left Pow", right_motor.getPower());
         telemetry.addData("Right Pow", left_motor.getPower());
+        telemetry.addData("Arm Pow", arm_motor.getPower());
         telemetry.update();
       }
     }
