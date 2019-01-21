@@ -14,11 +14,10 @@ import com.qualcomm.robotcore.util.Range;
 
 @TeleOp(name = "Driver Control", group = "Driver Control")
 public class DC extends LinearOpMode {
-    private ElapsedTime runtime = new ElapsedTime();
-    private DcMotor motorLeft;
-    private DcMotor motorRight;
-    private DcMotor motorLift;
-    private Servo servoTotem;
+      ElapsedTime runtime = new ElapsedTime();
+DcMotor motorLeft;
+ DcMotor motorRight;
+
 
 
     @Override
@@ -28,8 +27,6 @@ public class DC extends LinearOpMode {
 
         motorLeft = hardwareMap.get(DcMotor.class, "motorLeft");
         motorRight = hardwareMap.get(DcMotor.class, "motorRight");
-        motorLift = hardwareMap.get(DcMotor.class, "motorLift");
-        servoTotem = hardwareMap.get(Servo.class, "servoTotem");
         motorRight.setDirection(DcMotor.Direction.REVERSE);
 
         waitForStart();

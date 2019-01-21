@@ -8,10 +8,10 @@ import com.qualcomm.robotcore.hardware.Servo;
 @Autonomous(name = "Autonomous1", group = "")
 public class Autonomous1 extends LinearOpMode {
 
-  private Servo drop;
-  private DcMotor lift_motor;
-  private DcMotor right_motor;
-  private DcMotor left_motor;
+    Servo drop;
+    DcMotor lift_motor;
+    DcMotor right_motor;
+    DcMotor left_motor;
 
   /**
    * This function is executed when this Op Mode is selected from the Driver Station.

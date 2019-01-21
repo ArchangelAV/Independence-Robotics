@@ -9,12 +9,12 @@ import com.qualcomm.robotcore.hardware.Servo;
 @TeleOp(name = "DriverControlled", group = "DriverControlled")
 public class DriverControlledjava extends LinearOpMode {
 
-  private Servo drop;
-  private Servo arm_servo;
-  private DcMotor lift_motor;
-  private DcMotor left_motor;
-  private DcMotor right_motor;
-  private DcMotor arm_motor;
+    Servo drop;
+    Servo arm_servo;
+    DcMotor lift_motor;
+    DcMotor left_motor;
+    DcMotor right_motor;
+    DcMotor arm_motor;
 
   /**
    * This function is executed when this Op Mode is selected from the Driver Station.

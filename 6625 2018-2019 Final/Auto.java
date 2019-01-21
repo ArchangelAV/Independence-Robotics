@@ -10,11 +10,11 @@ import com.qualcomm.robotcore.util.ElapsedTime;
 
 @Autonomous(name = "Auto", group = "Auto")
 public class Auto extends LinearOpMode {
-    private DcMotor motorLeft;
-    private DcMotor motorRight;
-    private DcMotor motorLift;
-    private Servo servoTotem;
-    private ElapsedTime runtime = new ElapsedTime();
+      DcMotor motorLeft;
+      DcMotor motorRight;
+      DcMotor motorLift;
+      Servo servoTotem;
+      ElapsedTime runtime = new ElapsedTime();
 
 @Override 
     public void runOpMode() {
